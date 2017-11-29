@@ -4,6 +4,7 @@ import argparse
 import numpy as np
 from sklearn.model_selection import GridSearchCV
 from sklearn.externals import joblib
+from sklearn.utils import shuffle
 
 from pipelines import *
 from parameters import *
@@ -34,6 +35,7 @@ def load_possible_models(job_type):
     if job_type == 'regression':
         model_dict['ridge'] = (ridge_regression_pipeline, ridge_regression_parameters)
         model_dict['lasso'] = (lasso_regression_pipeline, lasso_regression_parameters)
+        model_dict['en'] = (elastic_net_regression_pipeline, elastic_net_regression_parameters)
         model_dict['knn'] = (knn_regression_pipeline, knn_regression_parameters)
     elif job_type == 'classification':
         model_dict['knn'] = (knn_classification_pipeline, knn_classification_parameters)
@@ -75,6 +77,10 @@ def main():
         for model_name in model_dict:
             model_pipeline, model_parameters = model_dict[model_name]
             score, model = grid_search(X, Y, model_pipeline, model_parameters, job_type)
+            print(score)
+            print('\n')
+            print(model)
+            print('\n\n')
             if score > best_score:
                 best_score = score
                 best_model = model

@@ -5,6 +5,7 @@ from sklearn.preprocessing import PolynomialFeatures
 from sklearn.neural_network import MLPRegressor
 from sklearn.linear_model import Ridge
 from sklearn.linear_model import Lasso
+from sklearn.linear_model import ElasticNet
 from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.neighbors import KNeighborsRegressor
@@ -17,7 +18,7 @@ ridge_regression_pipeline = Pipeline(
         [
 
             # Apply PCA to ridge
-            ('pca', PCA()),
+            # ('pca', PCA()),
 
             # Apply scaling to Ridge Regression
             ('scale', StandardScaler()),
@@ -40,15 +41,24 @@ lasso_regression_pipeline = Pipeline(
         ]
     )
 
-knn_regression_pipeline = Pipeline(
+elastic_net_regression_pipeline = Pipeline(
         [
-            # Apply scaling to k Nearest Neighbors Regression
-            ('scale', StandardScaler()),
 
-            # Apply PCA to KNN Regression
+            # Apply PCA
             ('pca', PCA()),
 
+            # Apply scaling
+            ('scale', StandardScaler()),
+            
+            ('en', ElasticNet())
+        ]
+    )
 
+
+
+
+knn_regression_pipeline = Pipeline(
+        [
             ('knn', KNeighborsRegressor())
         ]
     )
@@ -69,10 +79,6 @@ svm_classification_pipeline = Pipeline(
 
 knn_classification_pipeline = Pipeline(
         [
-            # Apply scaling to k Nearest Neighbors Classification
-            ('scale', StandardScaler()),
-            # ('pca', PCA()),
-
             ('knn', KNeighborsClassifier())
         ]
     )
@@ -80,8 +86,8 @@ knn_classification_pipeline = Pipeline(
 
 lda_classification_pipeline = Pipeline(
         [
+            ('pca', PCA()),
             ('scale', StandardScaler()),
-            # ('pca', PCA()),
 
             ('lda', LinearDiscriminantAnalysis())
         ]
@@ -89,8 +95,8 @@ lda_classification_pipeline = Pipeline(
 
 qda_classification_pipeline = Pipeline(
         [
-            ('scale', StandardScaler()),
             ('pca', PCA()),
+            ('scale', StandardScaler()),
 
             ('qda', QuadraticDiscriminantAnalysis())
         ]

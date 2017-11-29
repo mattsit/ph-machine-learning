@@ -5,7 +5,7 @@ ridge_regression_parameters = {
     # Hyperparameter search over all possible dimensions for PCA reduction
     'pca__n_components': np.arange(1, 13),
 
-    'ridge__alpha': np.arange(0, .1, .01)
+    'ridge__alpha': np.arange(0, 1, .01)
 }
 
 lasso_regression_parameters = {
@@ -16,20 +16,24 @@ lasso_regression_parameters = {
     'lasso__alpha': np.arange(0.02, 0.1, 0.001)
 }
 
-knn_regression_parameters = {
-
+elastic_net_regression_parameters = {
+    
     # Hyperparameter search over all possible dimensions for PCA reduction
     'pca__n_components': np.arange(1, 13),
 
+    'en__alpha': np.arange(.01, .05, .001),
+
+    'en__l1_ratio': np.arange(2.5, 3, 0.01)
+}
+
+knn_regression_parameters = {
+
     # Number of neighbors to use
-    'knn__n_neighbors': np.arange(1, 30),
+    'knn__n_neighbors': np.arange(1, 20),
 
 
-    # Apply uniform weighting vs k for k Nearest Neighbors Regression
-    # 'knn__weights': ['uniform']
-
-    # Apply distance weighting vs k for k Nearest Neighbors Regression
-    'knn__weights': ['distance']
+    # Apply weightings vs k for k Nearest Neighbors Regression
+    'knn__weights': ['uniform','distance']
 }
 
 svm_classification_parameters = {
@@ -41,10 +45,7 @@ svm_classification_parameters = {
     'svm__kernel': ['linear','rbf'],
 
     # C hyperparameter, original
-    'svm__C': np.arange(.01, 2, .1),
-
-    # C hyperparameter, scaled by 1/100
-    # 'svm__C': np.arange(0.022, 0.027, 0.0001),
+    'svm__C': np.arange(.1, 8, .5),
 
     # Gamma hyperparameter
     'svm__gamma': np.arange(.01, .2, .1)
@@ -52,23 +53,17 @@ svm_classification_parameters = {
 
 knn_classification_parameters = {
 
-    # Hyperparameter search over all possible dimensions for PCA reduction
-    # 'pca__n_components': np.arange(1, 13),
-
     # Number of neighbors to use
-    'knn__n_neighbors': np.arange(1, 50),
+    'knn__n_neighbors': np.arange(1, 30),
 
-    # Apply uniform weighting vs k for k Nearest Neighbors Regression
-    # 'knn__weights': ['uniform']
-
-    # Apply distance weighting vs k for k Nearest Neighbors Classification
+    # Apply weightings vs k for k Nearest Neighbors Classification
     'knn__weights': ['uniform', 'distance']
 }
 
 lda_classification_parameters = {
 
     # Hyperparameter search over all possible dimensions for PCA reduction
-    # 'pca__n_components': np.arange(1, 13),
+    'pca__n_components': np.arange(1, 13),
 
     # Shrinkage to use, if the solver is not 'svd'
     # 'lda__shrinkage': np.arange(.01, 1, .1),
@@ -81,10 +76,10 @@ lda_classification_parameters = {
 qda_classification_parameters = {
 
     # Hyperparameter search over all possible dimensions for PCA reduction
-    'pca__n_components': np.arange(1, 13),
+    'pca__n_components': [7],#np.arange(1, 13),
 
     # Regularization parameter
-    'qda__reg_param': np.arange(.01, 1, .01)
+    'qda__reg_param': np.arange(.01, .4, .02)
 }
 
 
