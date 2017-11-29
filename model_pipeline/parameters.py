@@ -22,7 +22,7 @@ knn_regression_parameters = {
     'pca__n_components': np.arange(1, 13),
 
     # Number of neighbors to use
-    'knn__n_neighbors': np.arange(1, 50),
+    'knn__n_neighbors': np.arange(1, 30),
 
 
     # Apply uniform weighting vs k for k Nearest Neighbors Regression
