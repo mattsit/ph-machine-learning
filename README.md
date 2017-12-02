@@ -1,3 +1,6 @@
+## Repo Structure
+Final deliverables intended for BioE134 can be found in the BioE134 directory. Final deliverables intended for CS189 can be found in the CS189 directory. Common files used for both projects remain in the root directory.
+
 ## Authors
 #### Rudra Mehta, Matthew Sit, Aman Dhar.
 All three of us are undergraduates in CS 189, completing this project for extra credit for Fall 2017. Rudra and Matthew intend on submitting a more biological view on this topic for their final project for BioE 134, Genetic Design Automation. Some background research, data collection, and fundamental modeling approaches may overlap, but the written deliverables and area of analyses will be unique. Permission to submit a related project to 189 has been provided by the BioE 134 professor, John Christopher Anderson (jcanderson [at] berkeley.edu), as well as CS 189 professor, Anant Sahai (sahai [at] eecs.berkeley.edu).
