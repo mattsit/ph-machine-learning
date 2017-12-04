@@ -18,5 +18,5 @@ If we are able to successfully reach a classifier that works best, we may try to
 
 ## References
  - A Smartphone-Based Automatic Measurement Method for Colorimetric pH Detection Using a Color Adaptation Algorithm, Kim, et al. (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5539506/).
- - Smartphone Based Colorimetric Detection via Machine Learning, Mutlu, et al. (https://arxiv.org/ftp/arxiv/papers/1703/1703.10217.pdf).
+ - Smartphone Based Colorimetric Detection via Machine Learning, Mutlu, et al. (https://www.researchgate.net/profile/Mehmet_Solmaz3/publication/315710086_Smartphone_Based_Colorimetric_Detection_via_Machine_Learning/links/59dcb9810f7e9b14600468e5/Smartphone-Based-Colorimetric-Detection-via-Machine-Learning.pdf).
  - Upsurge, math utilities library for Swift.
