@@ -45,12 +45,10 @@ def compute_avg_colored_pixel(partition):
 
 
 def get_data_from_masked_image(masked_image):
-    # masked_image = cv2.imread(img_path)
-    # y = img_path[12:-7].replace('p', '.')
     partitions = partition_image(masked_image)
     avg_pixels = [compute_avg_colored_pixel(partition) for partition in partitions]
-    X = np.asmatrix(np.concatenate(avg_pixels).ravel())
-    return X #, y
+    X = np.array(avg_pixels).flatten()
+    return X
 
 
 def create_masked_image(img):
@@ -111,7 +109,6 @@ def adjust_gamma(image, gamma=None):
     if gamma is None:
         gamma = np.random.uniform(0.5, 1.5)
         # gamma = 0.75
-    # print(gamma)
     invGamma = 1.0 / gamma
     table = np.array([((i / 255.0) ** invGamma) * 255
         for i in np.arange(0, 256)]).astype('uint8')
@@ -127,25 +124,20 @@ def rotate_colors(img, degrees=None):
 
     hsv_img = rgb_to_hsv(img/255)
     hsv_img[:, :, 0] = (hsv_img[:, :, 0] + -degrees/360.0) % 1.0
-    # hsv_img[:, :, 1] = hsv_img[:, :, 1] ** 0.65
     rgb_img = hsv_to_rgb(hsv_img)
     rgb_img *= 255
 
     return rgb_img
 
 
-def recolor_images(images, color_options={'gamma' : False, 'rotate' : False}):
-
-    images = np.array(images)
-    recolored_images = []
-    for i in range(images.shape[0]):
-        image = images[i]
-        # We adjust gamma first, as that is what was working for us previously
-        if color_options['gamma']:
-            image = adjust_gamma(image)
-        if color_options['rotate']:
-            image = rotate_colors(image)
-        recolored_images.append(image)
-
-    return recolored_images
+def recolor_image(image, color_option):
+    img_cpy = image.copy()
+    if color_option == 'gamma':
+        img_cpy = adjust_gamma(img_cpy)
+    elif color_option == 'rotate':
+        img_cpy = rotate_colors(img_cpy)
+    elif color_option == 'mixed':
+        img_cpy = adjust_gamma(img_cpy)
+        img_cpy = rotate_colors(img_cpy)
+    return img_cpy
 
