@@ -136,7 +136,7 @@ def adjust_gamma(image, gamma=None):
     # print(gamma)
     invGamma = 1.0 / gamma
     table = np.array([((i / 255.0) ** invGamma) * 255
-        for i in np.arange(0, 256)]).astype("uint8")
+        for i in np.arange(0, 256)]).astype('uint8')
 
     # apply gamma correction using the lookup table
     return cv2.LUT(image.astype('uint8'), table)
@@ -156,18 +156,18 @@ def rotate_colors(img, degrees=None):
     return rgb_img
 
 
-def recolor_images(images):
+def recolor_images(images, color_options={'gamma' : False, 'rotate' : False}):
 
     images = np.array(images)
-    # print(images.shape)
-
     recolored_images = []
     for i in range(images.shape[0]):
-        recolored_images.append(rotate_colors(adjust_gamma(images[i])))
-        # recolored_images.append(adjust_gamma(rotate_colors(images[i])))
-    # images = np.apply_along_axis(adjust_gamma, -1, images)
-    # print("Finished adjust_gamma")
-    # images = np.apply_along_axis(rotate_colors, -1, images)
-    # print("Finished rotate_colors")
+        image = images[i]
+        # We adjust gamma first, as that is what was working for us previously
+        if color_options['gamma']:
+            image = adjust_gamma(image)
+        if color_options['rotate']:
+            image = rotate_colors(image)
+        recolored_images.append(image)
+
     return recolored_images
 
