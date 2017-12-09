@@ -3,10 +3,10 @@ import numpy as np
 ridge_regression_parameters = {
 
     # Hyperparameter search over all possible dimensions for PCA reduction
-    # 'pca__n_components': np.arange(1, 13),
+    'pca__n_components': np.arange(1, 13),
 
     # 'ridge__alpha': np.arange(0, .05, .001)
-    'ridge__alpha': np.arange(.5, 2, .1)
+    'ridge__alpha': [.001,.01,.1]
 }
 
 lasso_regression_parameters = {
@@ -14,23 +14,24 @@ lasso_regression_parameters = {
     # Hyperparameter search over all possible dimensions for PCA reduction
     'pca__n_components': np.arange(1, 13),
 
-    'lasso__alpha': np.arange(0.02, 0.1, 0.001)
+    'lasso__alpha': [.001,.01,.1]#np.arange(0, 0.1, 0.01)
 }
 
 elastic_net_regression_parameters = {
     
     # Hyperparameter search over all possible dimensions for PCA reduction
-    'pca__n_components': np.arange(1, 13),
+    # 'pca__n_components': np.arange(1, 13),
 
-    'en__alpha': np.arange(.01, .05, .001),
+    'en__alpha': np.arange(.001, .1, .01),
 
-    'en__l1_ratio': np.arange(2.5, 3, 0.01)
+    'en__l1_ratio': np.arange(0, 3, 0.1)
 }
 
 knn_regression_parameters = {
 
     # Number of neighbors to use
-    'knn__n_neighbors': np.arange(1, 20),
+    'pca__n_components': np.arange(1, 13),
+    'knn__n_neighbors': np.arange(1, 16),
 
 
     # Apply weightings vs k for k Nearest Neighbors Regression
@@ -43,19 +44,17 @@ svm_classification_parameters = {
     'pca__n_components': np.arange(1, 13),
 
     # SVM kernel type
-    'svm__kernel': ['linear','rbf'],
+    'svm__kernel': ['linear'],
 
     # C hyperparameter, original
-    'svm__C': np.arange(.1, 8, .5),
-
-    # Gamma hyperparameter
-    'svm__gamma': np.arange(.01, .2, .1)
+    'svm__C': np.arange(.001,1.02,.25),
 }
 
 knn_classification_parameters = {
 
     # Number of neighbors to use
-    'knn__n_neighbors': np.arange(1, 30),
+    'pca__n_components': np.arange(1, 13),
+    'knn__n_neighbors': np.arange(1, 16),
 
     # Apply weightings vs k for k Nearest Neighbors Classification
     'knn__weights': ['uniform', 'distance']

@@ -18,7 +18,7 @@ ridge_regression_pipeline = Pipeline(
         [
 
             # Apply PCA to ridge
-            # ('pca', PCA()),
+            ('pca', PCA()),
 
             # Apply scaling to Ridge Regression
             ('scale', StandardScaler()),
@@ -45,7 +45,7 @@ elastic_net_regression_pipeline = Pipeline(
         [
 
             # Apply PCA
-            ('pca', PCA()),
+            # ('pca', PCA()),
 
             # Apply scaling
             ('scale', StandardScaler()),
@@ -59,6 +59,8 @@ elastic_net_regression_pipeline = Pipeline(
 
 knn_regression_pipeline = Pipeline(
         [
+            ('pca', PCA()),
+            ('scale', StandardScaler()), 
             ('knn', KNeighborsRegressor())
         ]
     )
@@ -70,7 +72,7 @@ svm_classification_pipeline = Pipeline(
             ('pca', PCA()),
 
             # Apply scaling to SVM Classification
-            ('scale', StandardScaler()),
+            # ('scale', StandardScaler()),
 
             ('svm', SVC())
         ]
@@ -79,6 +81,8 @@ svm_classification_pipeline = Pipeline(
 
 knn_classification_pipeline = Pipeline(
         [
+            ('pca', PCA()),
+            # ('scale', StandardScaler()), 
             ('knn', KNeighborsClassifier())
         ]
     )
