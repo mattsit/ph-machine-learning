@@ -87,6 +87,7 @@ For our study, we used Python 3.6.3, NumPy 1.13.3, scikit-learn 0.19.1, Matplotl
 
 \section{Results}
 
+\subsection{Pre-Processing}
 \begin{figure}
 \centering
 \includegraphics[height=2.5in]{pca.png}
@@ -95,6 +96,8 @@ For our study, we used Python 3.6.3, NumPy 1.13.3, scikit-learn 0.19.1, Matplotl
 \end{figure}
 
 For select experiments, we used PCA in order to project our data into a lower-dimensional subspace in order to simplify our models and hopefully increase accuracy. We hyperparameter tuned across different numbers of components for the applicable models. We can see that the classes cluster well, even with projection onto only two axes (Fig \ref{pca}).
+
+\subsection{Classification Models}
 
 \begin{figure}
 \centering
@@ -158,19 +161,21 @@ Using a kNN classification model on the unscaled data across the four experiment
 \label{ridge}
 \end{figure}
 
+\subsection{Regression Models}
+
 Across the four experiments, the regression ordinary least squares models generally performed best with low ridge regularization, where $\texttt{log}_{10}(\lambda) \leq 0$  (Fig \ref{ridge}). The lowest mean squared errors achieved across the four experiments were $0.033$, $0.078$, $0.78$, and $0.88$, respectively. The lowest mean squared error for the regression model ($0.033$) was achieved in the first experiment using the lowest regularization parameter tested ($\lambda = 0.001$). The introduction of random gamma modification slightly increased the error in the second experiment, but the color rotation added in the third and fourth experiments affected the accuracy of the model much more significantly.
 
 \begin{figure}
 \centering
 \includegraphics[height=2in]{KNN_reg_noPCA/knn_regression.png}
-\caption{TODO.}
+\caption{K Nearest Neighbor Regression Model. The Y axis is the Mean Squared Error and the X axis is the number of neighbors used in the model. The four lines represent the four datasets we used: no color change, with gamma modification, with color rotation, and with both gamma modification and color rotation.}
 \label{Rknn}
 \end{figure}
 
 \begin{figure}
 \centering
 \includegraphics[height=2in]{KNN_clf_PCA/knn_classification.png}
-\caption{TODO.}
+\caption{K Nearest Neighbor Regression Model, with PCA and scaling preprocessing. The Y axis is the Mean Squared Error and the X axis is the number of neighbors used in the model. The four lines represent the four datasets we used: no color change, with gamma modification, with color rotation, and with both gamma modification and color rotation.}
 \label{Rknn_pca}
 \end{figure}
 
