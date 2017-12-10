@@ -53,7 +53,7 @@ svm_classification_parameters = {
 knn_classification_parameters = {
 
     # Number of neighbors to use
-    'pca__n_components': np.arange(1, 13),
+    # 'pca__n_components': np.arange(1, 13),
     'knn__n_neighbors': np.arange(1, 16),
 
     # Apply weightings vs k for k Nearest Neighbors Classification

@@ -81,7 +81,7 @@ svm_classification_pipeline = Pipeline(
 
 knn_classification_pipeline = Pipeline(
         [
-            ('pca', PCA()),
+            # ('pca', PCA()),
             # ('scale', StandardScaler()), 
             ('knn', KNeighborsClassifier())
         ]
