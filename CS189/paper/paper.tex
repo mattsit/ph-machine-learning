@@ -8,6 +8,7 @@
 \documentclass[journal]{IEEEtran}
 \usepackage{hyperref}
 \usepackage[pdftex]{graphicx}
+\usepackage{textcomp}
 \graphicspath{{../figures/}}
 
 \begin{document}
@@ -104,9 +105,7 @@ For select experiments, we used PCA in order to project our data into a lower-di
 \includegraphics[height=2in]{SVM/svm_classification.png}
 \caption{Support Vector Machine Classification Model. The Y axis is the Accuracy (percent of predicted labels that are correct) and the X axis is the regularization strength. The four lines represent the four datasets we used: no color change, with gamma modification, with color rotation, and with both gamma modification and color rotation.}
 \label{svm}
-\end{figure}
 
-\begin{figure}
 \centering
 \includegraphics[height=2.5in]{SVM/SVM_classification_cfm.png}
 \caption{Sample confusion matrix for one fold of $k=3$ cross validation for SVM model. The confusion matrix plots the predicted class on the X axis, and the true class on the Y axis. Therefore, elements along the diagonal of the matrix were predicted correctly. In this case, 2 of 27 images were misclassified.}
@@ -120,9 +119,7 @@ As in the Mutlu paper, we first used Support Vector Machines (SVM) for classific
 \includegraphics[height=2in]{LDA/lda_classification.png}
 \caption{Linear Discriminant Analysis Classification Model. The Y axis is the Accuracy (percent of predicted labels that are correct) and the X axis is different number of components we project the data onto when doing PCA. The four lines represent the four datasets we used: no color change, with gamma modification, with color rotation, and with both gamma modification and color rotation.}
 \label{lda}
-\end{figure}
 
-\begin{figure}
 \centering
 \includegraphics[height=2.5in]{LDA/LDA_classification_cfm.png}
 \caption{Sample confusion matrix for one fold of $k=3$ cross validation for LDA model. None of the images were misclassified in this fold.}
@@ -136,16 +133,12 @@ A classification model using Linear Discriminant Analysis (LDA) was also tested 
 \includegraphics[height=2in]{KNN_clf_noPCA/knn_classification.png}
 \caption{K Nearest Neighbor Classification Model. The Y axis is the Accuracy (percent of predicted labels that are correct) and the X axis is the number of neighbors used in the model. The four lines represent the four datasets we used: no color change, with gamma modification, with color rotation, and with both gamma modification and color rotation.}
 \label{knn}
-\end{figure}
 
-\begin{figure}
 \centering
 \includegraphics[height=2.5in]{KNN_clf_noPCA/KNN_classification_cfm.png}
 \caption{Sample confusion matrix for one fold of $k=3$ cross validation for kNN model (without PCA/scaling). 2 of 35 images were misclassified.}
 \label{knn_confusion}
-\end{figure}
 
-\begin{figure}
 \centering
 \includegraphics[height=2in]{KNN_clf_PCA/knn_classification.png}
 \caption{K Nearest Neighbor Classification Model, with PCA and scaling preprocessing. The Y axis is the Accuracy (percent of predicted labels that are correct) and the X axis is the number of neighbors used in the model. The four lines represent the four datasets we used: no color change, with gamma modification, with color rotation, and with both gamma modification and color rotation.}
@@ -170,9 +163,7 @@ Across the four experiments, the regression ordinary least squares models genera
 \includegraphics[height=2in]{KNN_reg_noPCA/knn_regression.png}
 \caption{K Nearest Neighbor Regression Model. The Y axis is the Mean Squared Error and the X axis is the number of neighbors used in the model. The four lines represent the four datasets we used: no color change, with gamma modification, with color rotation, and with both gamma modification and color rotation.}
 \label{Rknn}
-\end{figure}
 
-\begin{figure}
 \centering
 \includegraphics[height=2in]{KNN_clf_PCA/knn_classification.png}
 \caption{K Nearest Neighbor Regression Model, with PCA and scaling preprocessing. The Y axis is the Mean Squared Error and the X axis is the number of neighbors used in the model. The four lines represent the four datasets we used: no color change, with gamma modification, with color rotation, and with both gamma modification and color rotation.}
@@ -210,7 +201,7 @@ The Mutlu paper did not explore regression techniques for estimating pH, yet our
 
 The pH estimates from the best regression model tested had a very low mean squared error ($0.033$), making further research in the area of regression models for estimating pH very promising. Realistically, researchers working with pH test strips would likely prefer regression estimates for pH rather than rounded integer classification, as minute differences in pH can drastically alter the behavior of a solution. For example, in C2C12 cells, a commonly-used immortalized mouse myoblast cell line for mammalian muscular cell culture and research, the optimal growth pH is 7.0 to 7.6 [4]. If we do classification, a pH of 6.6, far too low for cell survival, will be classified to 7, while a pH of 7.6, which is in the optimal growth range, will be classified to 8. While integer binning was used to achieve $100\%$ classification accuracy in the Mutlu paper, these types of models may not be as useful as regression models in practice. 
 
-\subsection{Acknowledging our Shortcomings}
+\subsection{Acknowledging Shortcomings}
 While both this experiment and the Mutlu experiment used 90 pH test strips in the creation of the training dataset, both experiments should be repeated with much larger training sets for more reliable results. Given additional resources, an increased training set may have allowed for further improvements in training and test accuracy. A larger training set may have also helped both the regression and classification models become more robust with respect to noise, including lighting changes and color correction. More training data would also help reduce variance across the results of several models. 
 
 This experiment could also be repeated with more scaling and projection techniques in order to further improve accuracy, especially concerning raw image data involving varying lighting conditions. This experiment achieved much lower errors for color rotation noise using the kNN regression models after scaling and PCA were used. 
@@ -220,7 +211,7 @@ However, as expected, the lowest mean squared errors for each model overall came
 Further machine learning techniques could be applied to similar datasets in order to develop more robust models. For example, neural networks could potentially extract better features from the images and perform well. However, we found that for the relatively simple dataset in this experiment, simpler models would likely achieve similar accuracies while being computationally less expensive.
 
 \section{Conclusion}
-Overall, we were able to develop both classification and regression models in this domain and obtain relatively high accuracy and low error. In spite of our similarly-sized dataset including more varied data for each pH value tested, we were able to match the classification accuracy ($100\%$) achieved by Mutlu while mimicking the various lighting changes in the data. We were also able to extend Mutlu’s findings using regression techniques, and successfully achieved low error in doing so.
+Overall, we were able to develop both classification and regression models in this domain and obtain relatively high accuracy and low error. In spite of our similarly-sized dataset including more varied data for each pH value tested, we were able to match the classification accuracy ($100\%$) achieved by Mutlu while mimicking the various lighting changes in the data. We were also able to extend Mutlu\textquotesingle s findings using regression techniques, and successfully achieved low error in doing so.
 
 In continuing research, a greater variety of models could be tested, and models achieving a high accuracy across varied data could potentially be exported to run on an Arduino board. This way, the process of estimating pH strips could be automated. In a similar spirit, the regression models could be integrated into a smartphone application, so that a researcher could manually take pictures of the pH strips while the models run in real time to estimate the captured pH. 
 
