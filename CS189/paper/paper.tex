@@ -108,7 +108,7 @@ For select experiments, we used PCA in order to project our data into a lower-di
 
 \centering
 \includegraphics[height=2.5in]{SVM/SVM_classification_cfm.png}
-\caption{Sample confusion matrix for one fold of $k=3$ cross validation for SVM model. The confusion matrix plots the predicted class on the X axis, and the true class on the Y axis. Therefore, elements along the diagonal of the matrix were predicted correctly. In this case, 2 of 27 images were misclassified.}
+\caption{Sample confusion matrix for one fold of three-fold cross validation for SVM model. The confusion matrix plots the predicted class on the X axis, and the true class on the Y axis. Therefore, elements along the diagonal of the matrix were predicted correctly. In this case, 2 of 27 images were misclassified.}
 \label{svm_confusion}
 \end{figure}
 
@@ -122,7 +122,7 @@ As in the Mutlu paper, we first used Support Vector Machines (SVM) for classific
 
 \centering
 \includegraphics[height=2.5in]{LDA/LDA_classification_cfm.png}
-\caption{Sample confusion matrix for one fold of $k=3$ cross validation for LDA model. None of the images were misclassified in this fold.}
+\caption{Sample confusion matrix for one fold of three-fold cross validation for LDA model. None of the images were misclassified in this fold.}
 \label{lda_confusion}
 \end{figure}
 
@@ -136,7 +136,7 @@ A classification model using Linear Discriminant Analysis (LDA) was also tested 
 
 \centering
 \includegraphics[height=2.5in]{KNN_clf_noPCA/KNN_classification_cfm.png}
-\caption{Sample confusion matrix for one fold of $k=3$ cross validation for kNN model (without PCA/scaling). 2 of 35 images were misclassified.}
+\caption{Sample confusion matrix for one fold of three-fold cross validation for kNN model (without PCA/scaling). 2 of 35 images were misclassified.}
 \label{knn_confusion}
 
 \centering
@@ -150,7 +150,7 @@ Using a kNN classification model on the unscaled data across the four experiment
 \begin{figure}
 \centering
 \includegraphics[height=2in]{Ridge/ridge_regression3.png}
-\caption{Ridge Regression Model. The Y axis is the Mean Squared Error ($\frac{1}{n} \Sigma_{i=1}^n (Y_i - \hat(Y)_i)^2$, where $Y_i$ is the true value and $\hat(Y)_i$ is the predicted value from our model) and the X axis is different levels of regularization on the model, shown on a logarithmic scale from -3 to 1. The four lines represent the four datasets we used: no color change, with gamma modification, with color rotation, and with both gamma modification and color rotation.}
+\caption{Ridge Regression Model. The Y axis is the Mean Squared Error, which is $\frac{1}{n} \Sigma_{i=1}^n (Y_i - \hat{Y}_i)^2$ where $Y_i$ is the true value of strip $i$ and $\hat{Y}_i$ is the predicted value from our model of strip $i$, and the X axis is different levels of regularization on the model, shown on a logarithmic scale from $-3$ to $1$. The four lines represent the four datasets we used: no color change, with gamma modification, with color rotation, and with both gamma modification and color rotation.}
 \label{ridge}
 \end{figure}
 

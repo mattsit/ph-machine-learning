@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6200 64-bit) (preloaded format=pdflatex 2017.1.1)  9 DEC 2017 20:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6200 64-bit) (preloaded format=pdflatex 2017.1.1)  9 DEC 2017 20:43
 entering extended mode
 **./paper.tex
 (paper.tex
@@ -541,7 +541,7 @@ LaTeX Font Info:    Try loading font information for OT1+pcr on input line 159.
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) [3 <../figures/pca.png> <../figures/SVM/svm_classification.png> <../figures/S
 VM/SVM_classification_cfm.png>]
-<../figures/KNN_reg_noPCA/knn_regression.png, id=137, 433.62pt x 289.08pt>
+<../figures/KNN_reg_noPCA/knn_regression.png, id=135, 433.62pt x 289.08pt>
 File: ../figures/KNN_reg_noPCA/knn_regression.png Graphic file (type png)
 
 <use ../figures/KNN_reg_noPCA/knn_regression.png>
@@ -599,12 +599,16 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 231.
 Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: A7E08442B0831997719ACEF234589674;708.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 231.
  ) 
 Here is how much of TeX's memory you used:
  6533 strings out of 493329
  102523 string characters out of 3139058
- 196676 words of memory out of 3000000
+ 197152 words of memory out of 3000000
  9957 multiletter control sequences out of 15000+200000
  41880 words of font info for 82 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -624,7 +628,7 @@ urier/ucrro8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (6 pages, 2245302 bytes).
+Output written on paper.pdf (6 pages, 2245290 bytes).
 PDF statistics:
  232 PDF objects out of 1000 (max. 8388607)
  40 named destinations out of 1000 (max. 500000)
