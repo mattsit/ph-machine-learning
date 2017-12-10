@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6200 64-bit) (preloaded format=pdflatex 2017.1.1)  9 DEC 2017 20:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6200 64-bit) (preloaded format=pdflatex 2017.1.1)  9 DEC 2017 20:12
 entering extended mode
 **./paper.tex
 (paper.tex
@@ -439,13 +439,13 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
 
-<../figures/Fig_2.png, id=69, 867.24pt x 464.73625pt>
+<../figures/Fig_2.png, id=67, 867.24pt x 464.73625pt>
 File: ../figures/Fig_2.png Graphic file (type png)
 
 <use ../figures/Fig_2.png>
 Package pdftex.def Info: ../figures/Fig_2.png used on input line 67.
 (pdftex.def)             Requested size: 234.87749pt x 125.86339pt.
- <../figures/Fig_3.png, id=74, 722.7pt x 361.35pt>
+ <../figures/Fig_3.png, id=72, 722.7pt x 361.35pt>
 File: ../figures/Fig_3.png Graphic file (type png)
 
 <use ../figures/Fig_3.png>
@@ -455,13 +455,13 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
  [2 <../figures/Fig_2.png> <../figures/Fig_3.png>]
-<../figures/pca.png, id=87, 375.4025pt x 280.04625pt>
+<../figures/pca.png, id=85, 375.4025pt x 280.04625pt>
 File: ../figures/pca.png Graphic file (type png)
  <use ../figures/pca.png>
 Package pdftex.def Info: ../figures/pca.png used on input line 94.
 (pdftex.def)             Requested size: 242.20436pt x 180.67499pt.
 
-<../figures/SVM/svm_classification.png, id=89, 433.62pt x 289.08pt>
+<../figures/SVM/svm_classification.png, id=87, 433.62pt x 289.08pt>
 File: ../figures/SVM/svm_classification.png Graphic file (type png)
 
 <use ../figures/SVM/svm_classification.png>
@@ -469,7 +469,7 @@ Package pdftex.def Info: ../figures/SVM/svm_classification.png used on input li
 ne 105.
 (pdftex.def)             Requested size: 216.80946pt x 144.54pt.
 
-<../figures/SVM/SVM_classification_cfm.png, id=90, 433.62pt x 289.08pt>
+<../figures/SVM/SVM_classification_cfm.png, id=88, 433.62pt x 289.08pt>
 File: ../figures/SVM/SVM_classification_cfm.png Graphic file (type png)
 
 <use ../figures/SVM/SVM_classification_cfm.png>
@@ -486,7 +486,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-<../figures/LDA/lda_classification.png, id=93, 433.62pt x 289.08pt>
+<../figures/LDA/lda_classification.png, id=91, 433.62pt x 289.08pt>
 File: ../figures/LDA/lda_classification.png Graphic file (type png)
 
 <use ../figures/LDA/lda_classification.png>
@@ -494,7 +494,7 @@ Package pdftex.def Info: ../figures/LDA/lda_classification.png used on input li
 ne 119.
 (pdftex.def)             Requested size: 216.80946pt x 144.54pt.
 
-<../figures/LDA/LDA_classification_cfm.png, id=94, 433.62pt x 289.08pt>
+<../figures/LDA/LDA_classification_cfm.png, id=92, 433.62pt x 289.08pt>
 File: ../figures/LDA/LDA_classification_cfm.png Graphic file (type png)
 
 <use ../figures/LDA/LDA_classification_cfm.png>
@@ -506,7 +506,7 @@ Overfull \hbox (19.01183pt too wide) in paragraph at lines 124--125
  [][] 
  []
 
-<../figures/KNN_clf_noPCA/knn_classification.png, id=96, 433.62pt x 289.08pt>
+<../figures/KNN_clf_noPCA/knn_classification.png, id=94, 433.62pt x 289.08pt>
 File: ../figures/KNN_clf_noPCA/knn_classification.png Graphic file (type png)
 
 <use ../figures/KNN_clf_noPCA/knn_classification.png>
@@ -514,7 +514,7 @@ Package pdftex.def Info: ../figures/KNN_clf_noPCA/knn_classification.png used o
 n input line 133.
 (pdftex.def)             Requested size: 216.80946pt x 144.54pt.
 
-<../figures/KNN_clf_noPCA/KNN_classification_cfm.png, id=97, 433.62pt x 289.08p
+<../figures/KNN_clf_noPCA/KNN_classification_cfm.png, id=95, 433.62pt x 289.08p
 t>
 File: ../figures/KNN_clf_noPCA/KNN_classification_cfm.png Graphic file (type pn
 g)
@@ -527,7 +527,7 @@ Overfull \hbox (19.01183pt too wide) in paragraph at lines 138--139
  [][] 
  []
 
-<../figures/KNN_clf_PCA/knn_classification.png, id=98, 433.62pt x 289.08pt>
+<../figures/KNN_clf_PCA/knn_classification.png, id=96, 433.62pt x 289.08pt>
 File: ../figures/KNN_clf_PCA/knn_classification.png Graphic file (type png)
 
 <use ../figures/KNN_clf_PCA/knn_classification.png>
@@ -535,7 +535,7 @@ Package pdftex.def Info: ../figures/KNN_clf_PCA/knn_classification.png used on
 input line 143.
 (pdftex.def)             Requested size: 216.80946pt x 144.54pt.
 
-<../figures/Ridge/ridge_regression3.png, id=102, 476.982pt x 317.988pt>
+<../figures/Ridge/ridge_regression3.png, id=100, 476.982pt x 317.988pt>
 File: ../figures/Ridge/ridge_regression3.png Graphic file (type png)
 
 <use ../figures/Ridge/ridge_regression3.png>
@@ -549,7 +549,7 @@ LaTeX Font Info:    Try loading font information for OT1+pcr on input line 159.
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) [3 <../figures/pca.png> <../figures/SVM/svm_classification.png> <../figures/S
 VM/SVM_classification_cfm.png>]
-<../figures/KNN_reg_noPCA/knn_regression.png, id=127, 433.62pt x 289.08pt>
+<../figures/KNN_reg_noPCA/knn_regression.png, id=125, 433.62pt x 289.08pt>
 File: ../figures/KNN_reg_noPCA/knn_regression.png Graphic file (type png)
 
 <use ../figures/KNN_reg_noPCA/knn_regression.png>
@@ -562,13 +562,12 @@ File: ../figures/KNN_clf_PCA/knn_classification.png Graphic file (type png)
 Package pdftex.def Info: ../figures/KNN_clf_PCA/knn_classification.png used on 
 input line 168.
 (pdftex.def)             Requested size: 216.80946pt x 144.54pt.
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ¦ in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ™ in font ptmr7t!
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 177.
 
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ts1ptm.fd"
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4 <../figures/LDA/lda_classification.png> <../figures/LDA/LDA_classification_
@@ -590,11 +589,6 @@ Missing character: There is no  in font ptmr7t!
 
 [5 <../figures/Ridge/ridge_regression3.png> <../figures/KNN_reg_noPCA/knn_regre
 ssion.png>]
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 214.
-
- ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ts1ptm.fd"
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
@@ -604,38 +598,38 @@ Missing character: There is no § in font ptmr7t!
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no – in font ptmr7t!
 LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <8> not available
-(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 241.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 245.
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 227.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 231.
  [6pdfTeX warning (ext4): destination with the same identifier (name{cite.}) ha
 s been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.245 \end{document}
+l.231 \end{document}
                     pdfTeX warning (ext4): destination with the same identifier
  (name{cite.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.245 \end{document}
+l.231 \end{document}
                     pdfTeX warning (ext4): destination with the same identifier
  (name{cite.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.245 \end{document}
+l.231 \end{document}
                     ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 245.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 231.
  (paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 245.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 245.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 231.
 Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: A7E08442B0831997719ACEF234589674;708.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 245.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 231.
  ) 
 Here is how much of TeX's memory you used:
  6524 strings out of 493329
@@ -649,22 +643,20 @@ Here is how much of TeX's memory you used:
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courie
-r/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrro8a.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/
-utmri8a.pfb>
-Output written on paper.pdf (6 pages, 2256998 bytes).
+c/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/co
+urier/ucrro8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/urw/times/utmri8a.pfb>
+Output written on paper.pdf (6 pages, 2241964 bytes).
 PDF statistics:
- 222 PDF objects out of 1000 (max. 8388607)
+ 216 PDF objects out of 1000 (max. 8388607)
  36 named destinations out of 1000 (max. 500000)
  162 words of extra memory for PDF output out of 10000 (max. 10000000)
 
