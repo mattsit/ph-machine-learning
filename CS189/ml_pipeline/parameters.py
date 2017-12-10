@@ -6,7 +6,7 @@ ridge_regression_parameters = {
     'pca__n_components': np.arange(1, 13),
 
     # 'ridge__alpha': np.arange(0, .05, .001)
-    'ridge__alpha': [.001,.01,.1]
+    'ridge__alpha': [.001,.01,.1,1,10]
 }
 
 lasso_regression_parameters = {
