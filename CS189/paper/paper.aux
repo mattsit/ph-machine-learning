@@ -16,10 +16,18 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{mutlu}
+\citation{anderson}
+\citation{mutlu}
+\citation{kim}
+\citation{mutlu}
+\citation{mutlu}
+\citation{kim}
 \@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{section.1}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces A photo of a pH strip captured with a hand-held smartphone under standard household lighting. This pH strip was submersed in a buffer with a target pH value of 8.70. The wet pH strip occasionally had solution leak across panels.}}{1}{figure.1}}
 \newlabel{raw_photo}{{1}{1}{A photo of a pH strip captured with a hand-held smartphone under standard household lighting. This pH strip was submersed in a buffer with a target pH value of 8.70. The wet pH strip occasionally had solution leak across panels}{figure.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {II}Experimental Setup and Pre-Processing}{1}{section.2}}
+\citation{farid}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Image preprocessing procedure: (A) Horizontal Sobel filter applied on a grayscaled pH strip image. The red lines represent the regions to crop the image at. (B) Vertical Sobel filter applied on a grayscaled pH strip image. The red lines represent the regions to crop the image at. (C) Binarized mask of the original image, cropped based on the Sobel filters, and eroded to get the center color regions. (D) Final masked image, isolating the four color squares.}}{2}{figure.2}}
 \newlabel{pre-process}{{2}{2}{Image preprocessing procedure: (A) Horizontal Sobel filter applied on a grayscaled pH strip image. The red lines represent the regions to crop the image at. (B) Vertical Sobel filter applied on a grayscaled pH strip image. The red lines represent the regions to crop the image at. (C) Binarized mask of the original image, cropped based on the Sobel filters, and eroded to get the center color regions. (D) Final masked image, isolating the four color squares}{figure.2}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces (A) The colors extracted from the four panels of a pH strip, stored in code as a total of 12 RGB values. (B) Gamma correction with a parameter of 1.5 applied on the raw extracted colors. Gamma correction nonlinear maps each color to effectively lighten or darken the image. (C) Hue rotation of -60 degrees around the color wheel applied on the raw extracted colors. (D) Application of both a gamma correction of 1.5 and a hue rotation of -60 degrees on the raw extracted colors.}}{2}{figure.3}}
@@ -52,10 +60,12 @@
 \newlabel{Rknn_pca}{{14}{5}{K Nearest Neighbor Regression Model, with PCA and scaling preprocessing. The Y axis is the Mean Squared Error and the X axis is the number of neighbors used in the model. The four lines represent the four datasets we used: no color change, with gamma modification, with color rotation, and with both gamma modification and color rotation}{figure.14}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {IV}Discussion}{5}{section.4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}Classification}{5}{subsection.4.1}}
-\bibcite{}{1}
-\bibcite{}{2}
-\bibcite{}{3}
-\bibcite{}{4}
+\citation{product}
+\bibcite{anderson}{1}
+\bibcite{mutlu}{2}
+\bibcite{kim}{3}
+\bibcite{farid}{4}
+\bibcite{product}{5}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}Regression}{6}{subsection.4.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}}Acknowledging Shortcomings}{6}{subsection.4.3}}
 \@writefile{toc}{\contentsline {section}{\numberline {V}Conclusion}{6}{section.5}}
