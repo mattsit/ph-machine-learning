@@ -126,7 +126,7 @@ As in the Mutlu paper, we first used Support Vector Machines (SVM) for classific
 \label{lda_confusion}
 \end{figure}
 
-A classification model using Linear Discriminant Analysis (LDA) was also tested across the four experiments. The training data was transformed using Principal Component Analysis (PCA) with the number of components varied between 1 and 12 (Fig. \ref{lda}). Using the raw color data from the first experiment, a PCA projection of the data from 12 to 11 components resulted in no loss in test accuracy ($100\%$). Concerning the second experiment, the LDA model achieved its highest accuracy of $91\%$ using 12 components. Again, the addition of color rotation to the data in the third and fourth experiments reduced the accuracy of the model to $77\%$ and $72\%$, respectively.
+A classification model using Linear Discriminant Analysis (LDA) was also tested across the four experiments. The training data was transformed using Principal Component Analysis (PCA) with the number of components varied between 1 and 12 (Fig. \ref{lda}). Using the raw color data from the first experiment, a PCA projection of the data using 12 components resulted in no loss in test accuracy ($100\%$). Concerning the second experiment, the LDA model achieved its highest accuracy of $91\%$ using 12 components. Again, the addition of color rotation to the data in the third and fourth experiments reduced the accuracy of the model to $77\%$ and $72\%$, respectively.
 
 \begin{figure}
 \centering
@@ -170,7 +170,7 @@ Across the four experiments, the regression ordinary least squares models genera
 \label{Rknn_pca}
 \end{figure}
 
-Using a kNN regression model on the unscaled data across the four experiments, mean squared errors of $0.034$, $0.109$, $0.292$, and $0.949$ were achieved for $k=2$, $2$, $2$, $3$, respectively (Fig. \ref{Rknn}). The lowest error on this model nearly as reliable as the lowest error achieved using ridge regression ($0.033$). After scaling and using PCA on the kNN regression model, the mean squared error for both the third and fourth experiments was greatly lowered (Fig. \ref{Rknn_pca}). For $k=11$, $12$ these models achieved mean squared errors of $0.197$ and $0.392$, a significant improvement over the other regression models. Concerning the first two experiments, which did not employ color rotation, kNN achieved mean squared errors of $0.046$ and $0.074$ with $k=3$, $3$ neighbors respectively.
+Using a kNN regression model on the unscaled data across the four experiments, mean squared errors of $0.034$, $0.109$, $0.292$, and $0.949$ were achieved for $k=2$, $2$, $2$, $3$, respectively (Fig. \ref{Rknn}). The lowest error on this model nearly as reliable as the lowest error achieved using ridge regression ($0.033$). After scaling and using PCA on the kNN regression model, the mean squared error for both the third and fourth experiments was greatly lowered (Fig. \ref{Rknn_pca}). For $k=2$, $2$ and $11$, $12$ PCA components, respectively, these models achieved mean squared errors of $0.197$ and $0.392$, a significant improvement over the other regression models. Concerning the first two experiments, which did not employ color rotation, kNN achieved mean squared errors of $0.046$ and $0.074$ with $k=3$, $3$ neighbors respectively.
 
 \section{Discussion}
 \subsection{Classification}
