@@ -17,15 +17,15 @@ find that mean squared regression errors as low as ~0.033 are
 achievable.
 
 ## File Descriptions
-code contains all the code used in this project. More specific descriptions available inside that directory.
+[code](code) contains all the code used in this project. More specific descriptions available inside that directory.
 
-data_matrices contain the file image data as RGB values of each of the four color patches. Further pre-processing was selectively applied within the code itself.
+[data_matrices](data_matrices) contain the file image data as RGB values of each of the four color patches. Further pre-processing was selectively applied within the code itself.
 
-masked_data contain the file image data with all but the four color patches masked away (the intermediate step between raw_data and data_matrices).
+[masked_data](masked_data) contain the file image data with all but the four color patches masked away (the intermediate step between raw_data and data_matrices).
 
-raw_data contain the orginial file image data.
+[raw_data](raw_data) contain the orginial file image data.
 
-paper.pdf is the report we wrote that documents our results and makes comparisons to existing literature.
+[paper.pdf](paper.pdf) is the report we wrote that documents our results and makes comparisons to existing literature.
 
 ## Authors
 #### Aman Dhar, Rudra Mehta, Matthew Sit.
