@@ -16,6 +16,15 @@ can have significant biological consequences. In this spirit, we
 find that mean squared regression errors as low as ~0.033 are
 achievable.
 
+## File Descriptions
+code contains all the code used in this project. More specific descriptions available inside that directory.
+
+data_matrices contain the file image data as RGB values of each of the four color patches. Further pre-processing was selectively applied within the code itself.
+
+masked_data contain the file image data with all but the four color patches masked away (the intermediate step between raw_data and data_matrices).
+
+raw_data contain the orginial file image data.
+
 ## Authors
 #### Aman Dhar, Rudra Mehta, Matthew Sit.
 All three of us are undergraduates in CS 189, completing this project for extra credit for Fall 2017. Rudra and Matthew submitted a more biological view on this topic for their final project for BioE 134, Genetic Design Automation. Some background research, data collection, and fundamental modeling approaches may overlap, but the written deliverables and area of analyses will be unique. Permission to submit a related project to 189 has been provided by the BioE 134 professor, John Christopher Anderson (jcanderson [at] berkeley.edu), as well as CS 189 professor, Anant Sahai (sahai [at] eecs.berkeley.edu).
